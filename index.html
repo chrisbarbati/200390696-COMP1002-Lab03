@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Christian's Form Page</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Christian's Lab 03 Form</h1>
+        </header>
+
+        <form action="thanks.html" netlify method="post">
+            <fieldset>
+                <legend>
+                    User Information
+                </legend>
+
+                <p>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" name="firstName" id="firstName" required>
+                </p>
+
+                <p>
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" name="lastName" id="lastName" required>
+                </p>
+                
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" name="email" id="email" required>
+                </p>
+
+                <p>
+                    <label for="tel">Phone Number:</label><br>
+                    <input type="tel" name="tel" id="tel">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Inquiry:
+                </legend>
+
+                <p>
+                    What is the nature of your inquiry?
+                </p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="careerOpportunity" id="careerOpportunity" value="careerOpportunity">
+                        <label for="careerOpportunity">Career Opportunity</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="businessProposal" id="businessProposal" value="businessProposal">
+                        <label for="businessProposal">Business Proposal</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="generalQuery" id="generalQuery" value="generalQuery">
+                        <label for="generalQuery">General Inquiry</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="complaint" id="complaint" value="complaint">
+                        <label for="complaint">Complaint</label>
+                    </li>
+                </ul>
+
+            <textarea id="inquiry" name="inquiry" placeholder="Please write your inquiry here" required></textarea>
+
+            </fieldset>
+
+            <p>
+                <button type="submit" value="Submit">Submit</button>
+            </p>
+
+    </body>
+    
+</html>
